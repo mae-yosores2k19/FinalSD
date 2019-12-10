@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mqtt</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- <h2><b> =^^= Gas Sensor =^^=</b></h2><br> -->
+    <div class="container">
+      <br /><br />
+      <div class="card">
+        <div class="card-header">
+          <div class="text-center h1 ">=^^= Floor Plan =^^=</div>
+        </div>
+
+        <div id="plan">
+          <div class="start"></div>
+
+          <div class="room">
+            <p class="roomName" >Grocerry</p>
+          
+            <div id="grocerry">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+
+          <div class="room">
+            <p class="roomName" >School Supply</p>
+            <div id = "school">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+
+          <div class="room">
+            <p class="roomName">Foot Wear Area</p>
+            <div id="footwear">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+
+          <div class="room">
+            <p class="roomName">Womens Wear</p>
+           
+            <div id="womenswear">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+
+          <div class="room">
+            <p class="roomName" >Mens Wear</p>
+            <div id="menswear">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+
+          <div class="room">
+            <p class="roomName">Lingeries Area</p>
+            <div id="linger">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+
+          <div class="room">
+            <p class="roomName" >Appliances Wear</p>
+            <div id="appliances">
+              <div class="base"></div>
+              <div class="light"></div>
+            </div>
+            <div class="door"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="browserMqtt.js"></script>
+    <script src="controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+  </body>
+</html>
